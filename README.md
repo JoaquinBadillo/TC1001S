@@ -1,4 +1,4 @@
-# TC1001S
+# TC1001S 💻🔧
 Source code for the Computer Tools course challenges.
 
 ## Authors:
