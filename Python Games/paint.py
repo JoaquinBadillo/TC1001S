@@ -12,6 +12,7 @@ Exercises
 
 from turtle import *
 from freegames import vector
+from math import hypot
 
 def line(start, end):
     "Draw line from start to end."
@@ -43,7 +44,16 @@ def rectangle(start, end):
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(3):
+        forward(hypot(start.x - end.x, start.y - end.y))
+        left(120)
+
+    end_fill()
 
 def tap(x, y):
     "Store starting point or draw shape."
