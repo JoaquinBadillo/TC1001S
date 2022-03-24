@@ -24,6 +24,8 @@ ghosts = [
     [vector(-180, -160), vector(0, 5)],
     [vector(100, 160), vector(0, -5)],
     [vector(100, -160), vector(-5, 0)],
+    [vector(90, -160), vector(5, 0)], # add 2 ghosts
+    [vector(-18, -160), vector(0, 5)]
 ]
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
