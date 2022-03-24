@@ -15,9 +15,9 @@ from turtle import *
 from freegames import path
 
 car = path('car.gif')
-tiles = list(range(32)) * 2
+tiles = list(range(8)) * 2
 state = {'mark': None}
-hide = [True] * 64
+hide = [True] * 16
 
 def square(x, y):
     "Draw white square with black outline at (x, y)."
@@ -27,17 +27,17 @@ def square(x, y):
     color('black', 'white')
     begin_fill()
     for count in range(4):
-        forward(50)
+        forward(100)
         left(90)
     end_fill()
 
 def index(x, y):
     "Convert (x, y) coordinates to tiles index."
-    return int((x + 200) // 50 + ((y + 200) // 50) * 8)
+    return int((x + 200) // 100 + ((y + 200) // 100) * 4)
 
 def xy(count):
     "Convert tiles count to (x, y) coordinates."
-    return (count % 8) * 50 - 200, (count // 8) * 50 - 200
+    return (count % 4) * 100 - 200, (count // 4) * 100 - 200
 
 def tap(x, y):
     "Update mark and hidden tiles based on tap."
@@ -58,7 +58,7 @@ def draw():
     shape(car)
     stamp()
 
-    for count in range(64):
+    for count in range(16):
         if hide[count]:
             x, y = xy(count)
             square(x, y)
