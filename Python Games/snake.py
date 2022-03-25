@@ -31,12 +31,26 @@ def move():
     head = snake[-1].copy()
     head.move(aim)
 
-    if not inside(head) or head in snake:
+    if  head in snake:
         square(head.x, head.y, 9, 'red')
         update()
         return
+    
+    if head.x < -200:
+        head.x = 190
 
-    snake.append(head)
+    if head.y > 190:
+        head.y = -200
+   
+
+    if head.x > 190:
+        head.x = -200
+    
+    if head.y < -200:
+        head.y = 190
+    snake.append(head)    
+
+
 
     if head == food:
         print('Snake:', len(snake))
