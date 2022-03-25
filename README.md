@@ -28,7 +28,7 @@ If the version is lower than 3.x try
 
 `$ python3 --version`
 
-if the version is still lower or if the python3 is not recognized, it can be installed from their webpage ([click me](https://www.python.org/)), from the microsoft store or using a package manager like apt (debian linux distros).
+if the version is still lower or if the python3 command is not recognized, it can be installed from their webpage ([click me](https://www.python.org/)), from the microsoft store or using a package manager like apt (debian linux distros).
 
 ### Freegames
 To install freegames we encourage you to use pip (python's package-management system). Execute
