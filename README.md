@@ -15,23 +15,22 @@ The original games in this repository were obtained from [Gil&#39;s Repository](
 ## List of games and modifications
 
 * Snake
-  * Pablo implemented "A, W, S, D" key response
-  * Joaquín changed the speed of the snake
-  * Shaul
+  * Pablo implemented "A, W, S, D" key response.
+  * Joaquín changed the speed of the snake.
+  * Shaul made the snake go around the edges.
 * Paint
-  * Pablo added draw rectangle function
-  * Joaquín added draw triangle function
-  * Shaul added draw circle function
+  * Pablo added draw rectangle function.
+  * Joaquín added draw triangle function.
+  * Shaul added draw circle function.
 * Pacman
-  * Pablo added two ghosts to the game
-  * Joaquín changed the board
-  * Shaul
+  * Pablo added two ghosts to the game.
+  * Joaquín changed the board.
+  * Shaul changed pacman's speed.
 * Cannon
-  * Pablo added gravity to the targets
-  * Joaquín added scoreboard
-  * Shaul
+  * Pablo added gravity to the targets.
+  * Joaquín added scoreboard.
 * Memory
-  * Shaul decreased the number of tiles to a 4x4 grid
+  * Shaul decreased the number of tiles to a 4x4 grid.
 
 ## Software requirements and installation
 
