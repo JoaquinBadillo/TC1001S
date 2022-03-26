@@ -21,7 +21,7 @@ state = {'mark': None}
 hide = [True] * 16
 
 def square(x, y):
-    "Draw white square with black outline at (x, y)."
+    """ Draw white square with black outline at (x, y). """
     up()
     goto(x, y)
     down()
@@ -33,15 +33,15 @@ def square(x, y):
     end_fill()
 
 def index(x, y):
-    "Convert (x, y) coordinates to tiles index."
+    """ Convert (x, y) coordinates to tiles index. """
     return int((x + 200) // 100 + ((y + 200) // 100) * 4)
 
 def xy(count):
-    "Convert tiles count to (x, y) coordinates."
+    """ Convert tiles count to (x, y) coordinates. """
     return (count % 4) * 100 - 200, (count // 4) * 100 - 200
 
 def tap(x, y):
-    "Update mark and hidden tiles based on tap."
+    """ Update mark and hidden tiles based on tap. """
     spot = index(x, y)
     mark = state['mark']
 
@@ -53,7 +53,7 @@ def tap(x, y):
         state['mark'] = None
 
 def draw():
-    "Draw image and tiles."
+    """ Draw image and tiles. """
     clear()
     goto(0, 0)
     shape(car)
