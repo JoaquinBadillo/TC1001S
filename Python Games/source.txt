@@ -1,4 +1,0 @@
-http://www.grantjenks.com/docs/freegames/
-
-Install module with:
-pip install freegames

@@ -1,11 +1,13 @@
 """Cannon, hitting targets with projectiles.
 
-Exercises
+Source: http://www.grantjenks.com/docs/freegames/
+Install module with:
+pip install freegames
 
-1. Keep score by counting target hits.
-2. Vary the effect of gravity.
-3. Apply gravity to the targets.
-4. Change the speed of the ball.
+Collaborators:
+Joaquín Badillo
+Pablo Banzo
+Shaul Zayat
 
 """
 
@@ -21,7 +23,7 @@ speed = vector(0, 0)
 targets = []
 
 def tap(x, y):
-    "Respond to screen tap."
+    # Respond to screen tap
     if not inside(ball):
         ball.x = -199
         ball.y = -199
@@ -57,7 +59,7 @@ def move():
     # Move the existing targets
     for target in targets:
         target.x -= 0.5
-        target.y -= 0.3 #gravity on targets
+        target.y -= 0.3 # Gravity on targets
 
     # Move the cannon shot
     if inside(ball):
