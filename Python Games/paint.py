@@ -1,12 +1,13 @@
 """Paint, for drawing shapes.
 
-Exercises
+Source: http://www.grantjenks.com/docs/freegames/
+Install module with:
+pip install freegames
 
-1. Add a color.
-2. Complete circle.
-3. Complete rectangle.
-4. Complete triangle.
-5. Add width parameter.
+Collaborators:
+Joaquín Badillo
+Pablo Banzo
+Shaul Zayat
 
 """
 import turtle
